@@ -1,0 +1,26 @@
+<div><a href="https://3000-dpitechcoach-rpsrcav-0ztlho9ujwj.ws-us67.gitpod.io/rock">play rock</a>
+</div>
+<div>
+<a href="https://3000-dpitechcoach-rpsrcav-0ztlho9ujwj.ws-us67.gitpod.io/paper">play paper</a>
+</div>
+<div>
+<a href="https://3000-dpitechcoach-rpsrcav-0ztlho9ujwj.ws-us67.gitpod.io/scissors">play scissors</a>
+</div>
+<% index = rand(3) %>
+
+<% moves = ["rock","paper","scissors"]%>
+<% comp_move = moves.at(index) %>
+<% if comp_move == "rock" %>
+  <% outcome = "won" %>
+<% elsif comp_move == "paper" %>
+  <% outcome = "tied" %>
+<% elsif comp_move == "scissors" %>
+  <% outcome = "lost" %>
+<% end%>
+
+
+<h2>You played paper!</h2>
+
+<h2>They played <%= comp_move %></h2>
+
+<h2>We <%= outcome %></h2>
